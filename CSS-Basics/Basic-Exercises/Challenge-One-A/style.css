@@ -1,0 +1,29 @@
+body {
+    background-color: #cd9c5c;
+}
+
+#wrap {
+    background-color: #f4d2a7;
+    border: 4px dashed black;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 4px dashed black;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li::first-letter {
+    font-weight: bold;
+} 
+
+#info  {
+    font-size: 1px;
+    text-align: center;
+}

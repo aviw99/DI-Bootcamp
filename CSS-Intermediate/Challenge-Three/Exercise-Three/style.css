@@ -1,0 +1,40 @@
+header {
+    background-color: green;
+    height: 100px;
+    margin: 40px;
+}
+#one {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+#two {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+}#three {
+    background-color: rgb(110, 110, 237);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+}
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+img{
+    margin: 20px;
+}
+
+.wrap {
+    display: ;
+}

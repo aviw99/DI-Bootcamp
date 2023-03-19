@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+#wrap {
+    /* max-width: 1000px; */
+    background-color: #20429a;
+    text-align: center;
+    height: 1000px;
+    padding: 0px 50px 50px 50px;
+   
+}
+
+#nav {
+    float: left;
+    background-color: #bccfff;
+    height: 360px;
+    
+}
+
+#content {
+    background-color: #5479d7;
+}
+
+#content ul {
+    list-style-type: none;
+}
+
+.copyright {
+    background-color: #20429a;
+    color: white;
+   
+}
+.copyright a:link {
+    color: white;
+}
+.copyright a:hover {
+    color: purple;
+}
+.copyright a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 769px) {
+    #nav{
+        
+    }
+  }
+
+@media screen and (max-width: 480px) {
+    #nav{
+
+    }
+  }
+
+

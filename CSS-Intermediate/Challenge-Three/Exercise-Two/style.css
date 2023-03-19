@@ -1,0 +1,26 @@
+header {
+    background-color: rgb(116, 59, 169);
+    height: 80px;
+    width: 680px;
+    margin: 20px;
+}
+#one {
+    background-color: rgb(149, 46, 46);
+}
+#two {
+    background-color: rgb(65, 125, 65);
+}
+#three {
+    background-color: rgb(218, 145, 10);
+}
+.wrap {
+   
+}
+article {
+    width: 200px;
+    height: 500px;
+    margin: 20px;
+}
+.articles {
+    display: flex;
+}

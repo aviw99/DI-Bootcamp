@@ -1,0 +1,14 @@
+.cat-section {
+    text-align: center;
+}
+.lion-section {
+    text-align: center;
+}
+.red {
+    color: red;
+    border: 1px red solid;
+    padding: 0 0px;
+}
+.cell {
+    border: 1px black solid;
+}

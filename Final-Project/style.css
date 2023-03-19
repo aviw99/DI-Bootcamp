@@ -1,0 +1,254 @@
+.wrap { 
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    /* background-color: black; */
+    height: 100px;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+    /* opacity: 0.3; */
+    /* color: black; */
+    position: sticky;
+    top: 0rem;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+#logo_background {
+    z-index: 3;
+    width: 370px;
+    position: relative;
+    /* left: px; */
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 100%; */
+}
+#logo {
+    margin-top: 15px;
+    /* margin-left: 2px;
+    marg */
+    width: 100px;
+    -webkit-filter: invert(100%);
+    /* margin-left: -100px; */
+    /* background-color: white; */
+    /* border-radius: 100%; */
+}
+@font-face {
+    font-family: linkin_park;
+    src: url(font/linkinpark.ttf);
+}
+#links {
+    width: 100%;
+    line-height: 100px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: linkin park;
+}
+hr {
+    border: 1.5px solid white;
+    margin: 0px 0px;
+}
+#links:hover {
+    font-size: 40px;
+    transition-duration: 0.2s;
+}
+/* .static_position {
+    position: relative;
+}
+.band_img {   
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    
+} */
+#band {
+    /* padding: 10px 20px; */
+    width: 900px;
+    margin-top: 20px;
+    margin-right: 1000px;
+}
+#social_media {
+    
+}
+#music_video {
+    width: 300px;
+    height: 300px;
+    border: red solid 5px;
+}
+.section_one {
+    display: flex;
+    justify-content: space-around;
+    filter: grayscale(100%);   
+    background-image: linear-gradient(black, rgb(40, 40, 40));
+    /* color: green; */
+    margin-left: -350px;
+    margin-right: -8px;
+    /* margin-top: -50px; */
+}
+#home_info {
+    margin: 0px 900px;
+    padding: 0px 10px;
+    border: red 5px solid;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: linkin park;
+}
+.box {
+
+}
+#social_media {
+    margin-left: -8px;
+    position: fixed;
+    right: 0px;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.border {
+    border: 10px solid rgb(0, 0, 0);
+    margin: 0px -8px;
+}
+/* .section_two {
+    margin-left: -8px;
+    margin-right: -8px;
+    background-image: linear-gradient(rgb(40, 40, 40), rgb(100, 100, 100));
+} */
+.members {
+    background-image: linear-gradient(rgb(40, 40, 40), rgb(100, 100, 100));
+    margin: 0px -8px; 
+}
+.brad, .mike,
+.chester, .dave,
+.joe, .rob {
+   display: flex;
+}
+.members h1 {
+    font-size: 40px;
+    color: white;
+}
+.members p {
+    font-size: 20px;
+    color: white;
+}
+#brad {
+    max-width:350px;
+    padding: 0 200px;   
+    margin-top: 150px; 
+}
+#brad_img {
+    width: 500px;
+    padding-left: 200px;
+    margin-top: 150px; 
+}
+#dave {
+    max-width:350px;
+    padding: 0 100px;    
+}
+#dave_img {
+    width: 500px;
+    padding-left: 200px;
+}
+#joe {
+    max-width:350px;
+    padding: 0 100px;    
+}
+#joe_img {
+    width: 500px;
+    padding-left: 200px;
+}
+#mike {
+    max-width:350px;
+    padding: 0 100px;    
+}
+#mike_img {
+    width: 500px;
+    padding-left: 200px;
+}#rob {
+    max-width:350px;
+    padding: 0 100px;    
+}
+#rob_img {
+    width: 500px;
+    padding-left: 200px;
+}#chester {
+    max-width:350px;
+    padding: 0 100px;    
+}
+#chester_img {
+    width: 500px;
+    padding-left: 200px;
+}
+
+/* #members {
+    padding: 100px;
+}
+#chester_mike_brad {
+    display: flex;
+    justify-content: space-around;
+}
+#dave_rob_joe {
+    display: flex;
+    justify-content: space-around;
+}
+.chester, .mike,
+.brad, .dave,
+.rob, .joe {
+    display: flex;
+    color: white;
+    width: 250px;
+}
+#chester, #mike,
+#brad, #dave,
+#rob, #joe {   
+    width: 350px; 
+    padding: 20px; 
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+}  */
+.section_three {
+    background-image: linear-gradient(rgb(100, 100, 100), rgb(221, 221, 221));
+    margin: 0px -8px; 
+    display: flex;
+}
+.fa {
+    padding: 45px;
+    font-size: 30px;
+    width: 50px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;    
+  }
+  /* Add a hover effect if you want */
+  .fa:hover {
+    /* font-size: 30px; */
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+    transition-duration: 0.2s;
+    /* opacity: 0.7; */
+  }  
+  /* Set a specific color for each brand */
+  /* Facebook */
+  .fa-facebook {
+    background: rgb(25, 25, 25);
+    color: whitesmoke;
+  }
+  /* Twitter */
+  .fa-twitter {
+    background: rgb(35, 35, 35);
+    color: whitesmoke;
+  }
+  .fa-instagram {
+    background: rgb(45, 45, 45);
+    color: whitesmoke;
+  }
+  .fa-youtube {
+    background: rgb(55, 55, 55);
+    color: whitesmoke;
+  }

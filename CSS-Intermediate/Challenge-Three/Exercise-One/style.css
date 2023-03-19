@@ -1,0 +1,41 @@
+#wrap {
+    display: flex;
+    flex-direction: column;
+}
+#blue-pink {
+    display: flex;
+    /* justify-content: space-around; */
+}
+section {
+    background-color:  rgb(251, 99, 99);
+    border: 1px solid black;
+    margin: 15px;
+    height: 100px;
+    width: 100px;    
+}
+article {
+    background-color: rgb(120, 136, 239);
+    border: 1px solid black;
+    margin: 15px;
+    height: 100px;
+    width: 600px;   
+}
+footer {
+    background-color: rgb(255, 218, 51);
+    border: 1px solid black;
+    height: 100px;
+   
+}
+#pink {
+    /* width: 200px; */
+    /* display: inline-block; */
+}  
+#blue {
+    /* width: 600px; */
+    
+    /* display: inline-block;     */
+}
+#yellow {
+    width: 100%;   
+
+}

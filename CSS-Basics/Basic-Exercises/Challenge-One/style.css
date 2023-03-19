@@ -1,0 +1,14 @@
+body {
+    background-color: #2bcef3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li::first-letter {
+    font-weight: bold;
+}
