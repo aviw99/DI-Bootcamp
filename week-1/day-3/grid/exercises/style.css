@@ -1,0 +1,150 @@
+body{
+    text-align: center;
+}
+.container{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.pink{
+    border: solid black 1px;
+    background-color: pink;
+    height: 50px;
+    margin: 10px;
+}
+.blue{
+    border: solid black 1px;
+    background-color: lightblue;
+    height: 50px;
+    margin: 10px;
+    grid-row: 1 / span 3;
+}
+.a, .b, .c{
+    grid-column-start: 2;
+}
+.b{
+    grid-row-start: 2;
+}
+.c{
+    grid-row-start: 3;
+}
+.yellow{
+    border: solid black 1px;
+    background-color: yellow;
+    height: 50px;
+    margin: 10px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container2{
+    padding: 0 35%;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.header{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.hero{
+    background-color: rgb(193, 126, 255);
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+.main{
+    background-color: yellow;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.sidebar{
+    background-color: greenyellow;
+    grid-row-start: 7;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.extra{
+    background-color: gray;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.related{
+    background-color: rgb(71, 231, 71);
+    grid-row-start: 12;
+    grid-row-end: 15;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.related2{
+    background-color: pink;
+    grid-row-start: 12;
+    grid-row-end: 15;
+}
+.footer{
+    background-color: orange;
+    grid-row-start: 15;
+    grid-row-end: 17;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.container3{
+    display: grid;
+    margin: 0 200px;
+    gap: 5px;
+    grid-template-areas: 
+    'one one one'
+    'two three four'
+    'two five five'
+    'six six seven'
+    'eight eight eight';
+}
+.pink3{
+    background-color: rgb(255, 0, 208);
+}
+.purple3{
+    background-color: rgb(131, 71, 205);
+}
+.blue3{
+    background-color: rgb(121, 121, 250);
+}
+.lightblue3{
+    background-color: lightblue;
+}
+.lightpink3{
+    background-color: pink;
+}
+.item1{
+    grid-area: one;
+}
+.item2{
+    grid-area: two;
+}
+.item3{
+    grid-area: three;
+}
+.item4{
+    grid-area: four;
+}
+.item5{
+    grid-area: five;
+}
+.item6{
+    grid-area: six;
+}
+.item7{
+    grid-area: seven;
+}
+.item8{
+    grid-area: eight;
+}

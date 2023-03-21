@@ -1,0 +1,86 @@
+body{
+    text-align: center;
+}
+div{
+    color: white;
+    text-shadow: 1px 1px black;
+    line-height: 30px;
+}
+.container{
+    border: red 2px solid;   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.f{
+    background-color: aqua;
+    margin: 1px;
+    width: 60px;
+    height: 60px;
+}
+.one, .three{
+    flex: 0 0 100%;
+}
+.two{
+    flex-basis: 300px;
+    height: 150px;
+}
+.container2{
+    border: red 2px solid;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.f2{
+    background-color: aqua;
+    margin: 1px;
+    width: 60px;
+    height: 60px;
+}
+.one2, .three2{
+    flex-basis: 100%;
+}
+.two2{
+    flex-basis: 200px;
+}
+.container3{
+    border: red 2px solid;   
+    display: flex;
+    padding: 20px 10px;
+}
+.logo, .team, .products{
+    height: 30px;
+}
+.logo{
+    background-color: rgb(255, 86, 255);
+}
+.team{
+    background-color: aqua;
+    flex: 1;
+}
+.products{
+    background-color: rgb(199, 83, 83);
+    flex: 1;
+}
+.container4{
+    border: red 2px solid;   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.f4{
+    background-color: aqua;
+    margin: 1px;
+    width: 60px;
+    height: 60px;
+}
+.one4, .three4{
+    flex-basis: 80%;
+}
+.two4{
+    flex-basis: 100%;
+}

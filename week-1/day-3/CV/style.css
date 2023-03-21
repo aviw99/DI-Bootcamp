@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+.container{    
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.fa-brands{
+    color: rgb(30, 30, 30);
+    font-size: 60px;
+    line-height: 10rem;
+}
+a{
+    text-decoration: none;
+}
+.linkedin-text{
+    /* line-height: -15px; */
+    margin-top: -50px;
+    font-size: 15px;
+    color: rgb(30, 30, 30);
+}
+img{
+    width: 150px;
+    border-radius: 100%;
+    margin-top: 50px;
+    filter: grayscale(100);
+}
+.name{
+    width: 400px;
+    height: 840px;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin-left: 50px;
+}
+.info{
+    margin-left: -35px;
+    margin-right: 50px;
+}
+.profile, .education,
+.skills, .experience{
+    background-color: rgba(200, 200, 200, 0.174);
+}
+.ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+

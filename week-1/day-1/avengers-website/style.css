@@ -95,7 +95,7 @@ footer {
         color: black;
     }
 }
-/* large devices */
+
 @media screen and (max-width: 992px) {
     ul {
         background-color: red;
