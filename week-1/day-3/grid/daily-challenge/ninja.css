@@ -1,0 +1,76 @@
+.container{
+    display: grid;
+    /* gap: 5px; */
+    grid-template-columns:  repeat(16, 30px)  ;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px ;
+}
+.orange{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border: 1px solid white;
+}
+.beige{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 121);
+    border: 1px solid white;
+}
+.brown{
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    border: 1px solid white;
+}
+.container-2{
+    display: grid;
+    grid-template-columns: repeat(16, 37px);
+}
+.lightest{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(194, 194, 194);
+    margin: 1px;
+}
+.light{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(137, 137, 137);
+    margin: 1px;
+    
+}
+.dark{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(101, 100, 100);
+    margin: 1px;
+}
+.darkest{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(66, 65, 65);
+    margin: 1px;
+}
+.container-3{
+    /* border: red solid 2px; */
+    display: grid;
+    grid-template-columns: repeat(16, 37px);
+}
+.white{
+    width: 37px;
+    height: 37px;
+    margin: -1px;
+    background-color: whitesmoke;
+}
+.pink{
+    width: 37px;
+    height: 37px;
+    margin: -1px;
+    background-color: pink;
+}
+.red{
+    width: 37px;
+    height: 37px;
+    margin: -1px;
+    background-color: red;
+}

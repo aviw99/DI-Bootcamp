@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+.triangle-up{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid red;
+}
+.triangle-down{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid rgba(0, 128, 0, 0.584);
+    
+}
