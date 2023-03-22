@@ -6,19 +6,92 @@ body{
     grid-template-columns: repeat(6, 1fr);
 }
 
-
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-left: -75px;
+    overflow: hidden;
+}
+.sec-two, .sec-four, .sec-six, .sec-eight{
+    margin-left: -50px;
+    margin-top: -950px;
+    
+}
+.sec-one{
+    z-index: 100;
+}
+.sec-two{
+    z-index: 1;
+}
+.sec-three{
+    z-index: 100;
+}
+.sec-four{
+    z-index: 1;
+}
+.sec-five{
+    z-index: 100;
+}
+.sec-six{
+    z-index: 1;
+}
+.sec-seven{
+    z-index: 100;
+}
+.sec-eight{
+    z-index: 1;
+}
+.sec-three, .sec-five, .sec-seven{
+    margin-left: 450px;
+}
+/* .one{
+    border-top: 50px solid red;
+    
+} */
 .triangle-up{
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-	border-bottom: 50px solid red;
+	border-bottom: 50px solid rgba(61, 35, 255, 0.8);
 }
 .triangle-down{
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-	border-top: 50px solid rgba(0, 128, 0, 0.584);
-    
+	border-top: 50px solid rgba(0, 203, 0, 0.8);
 }
+.triangle-up:hover .triangle-down:first-child {
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 50px solid rgb(255, 192, 203);
+    z-index: 200;
+    transition-delay: .01s ease;
+    -webkit-transition:  .01s ease;
+}
+.triangle-up:hover .triangle-up:first-child {
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 50px solid rgb(255, 192, 203);
+    z-index: 200;
+    transition-delay: .01s ease;
+    -webkit-transition:  .01s ease;
+}
+.triangle-down:hover .triangle-down:first-child {
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 50px solid rgb(255, 192, 203);
+    z-index: 200;
+    transition-delay: .01s ease;
+    -webkit-transition:  .01s ease;
+}
+.triangle-down:hover .triangle-up:first-child {
+    border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 50px solid rgb(255, 192, 203);
+    z-index: 200;
+    transition-delay: .01s ease;
+    -webkit-transition:  .01s ease;
+}
+
