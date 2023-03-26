@@ -5,7 +5,7 @@ if 2 != 2 or sun == 'up':
 
 
     apple = 'yellow'
-    winner = 1
+    winner = True
 
     if apple == 'red' or winner  == False:
         print('true')
