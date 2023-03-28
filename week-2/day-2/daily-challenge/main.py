@@ -10,7 +10,7 @@
 
 user_str = input('input word: ')
 user_list = list(user_str)   #school
-length = len(user_list)-3  #3
+length = len(user_list)-2    #3
 index = 0                    #4
 # while 4   <=   3
 while index <= length:
