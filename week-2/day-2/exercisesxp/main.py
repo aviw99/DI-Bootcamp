@@ -79,6 +79,7 @@ import numpy as np
 # else:
 #     print('You chose a new fruit. I hope you enjoy')
 
+# exercise 8
 toppings = []
 choice = ''
 while True:
@@ -88,24 +89,3 @@ while True:
     else:
         break
 print("Toppings: ", toppings)
-
-
-# exercise 8
-# toppings = ''
-# pie = ''
-# while toppings == '':
-#     toppings = input('input a pizza topping. ')
-#     if toppings == 'quit':
-#         break
-#     else:
-#         pie += toppings
-#         print("I'll add that topping to your pizza")    
-# while True:
-#     toppings = input('input a new pizza topping. ')
-#     if toppings == 'quit':
-#         break
-#     else:
-#         pie += toppings
-#         print("I'll add that topping to your pizza")
-
-# print(pie)
