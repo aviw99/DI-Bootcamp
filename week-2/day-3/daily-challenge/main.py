@@ -33,6 +33,3 @@ items_list.sort()
 if items_list == []:
     print('Nothing')
 print(items_list)
-        
-
-    
