@@ -76,43 +76,43 @@
 # stairway = Song(["There’s a lady who's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])
 # stairway.sing_me_a_song()
 
-# # exercise 4 - zoo
-# class Zoo():
-#     def __init__(self, zoo_name):
-#         self.animals = []
-#         self.name = zoo_name
+# exercise 4 - zoo
+class Zoo():
+    def __init__(self, zoo_name):
+        self.animals = []
+        self.name = zoo_name
     
-#     def add_animal(self, new_animal):
-#         if new_animal not in self.animals:
-#             self.animals += new_animal
-#             self.get_animals()
+    def add_animal(self, new_animal):
+        if new_animal not in self.animals:
+            self.animals += new_animal
+            self.get_animals()
 
-#     def get_animals(self):
-#         print(self.animals)
-#         return self.animals
+    def get_animals(self):
+        print(self.animals)
+        return self.animals
 
-#     def sell_animal(self, animal_sold):
-#         if animal_sold in self.animals:
-#             self.animals.remove(animal_sold)
-#             self.get_animals()
+    def sell_animal(self, animal_sold):
+        if animal_sold in self.animals:
+            self.animals.remove(animal_sold)
+            self.get_animals()
 
-#     def sort_animals(self):
-#         sorted = self.animals
-#         sorted.sort()
-#         sorted_list = []
-#         x = []
-#         for i in range(len(sorted)):
-#             x.append(i+1)
-#         res_dict = dict((key, value) for key, value in zip(x, sorted))
-#         print(res_dict)
+    def sort_animals(self):
+        sorted = self.animals
+        sorted.sort()
+        sorted_list = []
+        x = []
+        for i in range(len(sorted)):
+            x.append(i+1)
+        res_dict = dict((key, value) for key, value in zip(x, sorted))
+        print(res_dict)
 
-#     def ramat_gan_safari(self):
-#         self.get_animals()
-#         self.add_animal(['Elephant'])
-#         self.sell_animal('Tiger')
-#         self.sort_animals()
+    def ramat_gan_safari(self):
+        self.get_animals()
+        self.add_animal(['Elephant'])
+        self.sell_animal('Tiger')
+        self.sort_animals()
 
-# my_zoo = Zoo('My Zoo')
-# my_zoo.add_animal(['Zebra', 'Antelope', 'Lion'])
-# my_zoo.add_animal(['Beaver', 'Tiger', 'Pig', 'Toad', 'Eagle', 'Aardvark'])
-# my_zoo.ramat_gan_safari()
+my_zoo = Zoo('My Zoo')
+my_zoo.add_animal(['Zebra', 'Antelope', 'Lion'])
+my_zoo.add_animal(['Beaver', 'Tiger', 'Pig', 'Toad', 'Eagle', 'Aardvark'])
+my_zoo.ramat_gan_safari()
