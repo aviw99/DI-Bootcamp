@@ -85,16 +85,16 @@ class Zoo():
     def add_animal(self, new_animal):
         if new_animal not in self.animals:
             self.animals += new_animal
-            self.get_animals()
+            # self.get_animals()
 
     def get_animals(self):
         print(self.animals)
-        return self.animals
+        # return self.animals
 
     def sell_animal(self, animal_sold):
         if animal_sold in self.animals:
             self.animals.remove(animal_sold)
-            self.get_animals()
+            # self.get_animals()
 
     def sort_animals(self):
         sorted = self.animals
@@ -116,3 +116,4 @@ my_zoo = Zoo('My Zoo')
 my_zoo.add_animal(['Zebra', 'Antelope', 'Lion'])
 my_zoo.add_animal(['Beaver', 'Tiger', 'Pig', 'Toad', 'Eagle', 'Aardvark'])
 my_zoo.ramat_gan_safari()
+
