@@ -13,8 +13,9 @@ class Mammal(Animal):  #child
         out = f'{self.name} produces milk'
         print(out)
 
-    def __init__(self, name: str):
-        self.name = name
+    def __init__(self, name: str, lungs: int):
+        super().__init__(name)
+        self.lungs = lungs
 
 class SeaMammal(Mammal):
 

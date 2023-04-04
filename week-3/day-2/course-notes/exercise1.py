@@ -15,7 +15,6 @@
 # door = Door('door')
 # blocked = BlockedDoor('door')
 
-
 class Door:
 
     def __init__(self):
