@@ -68,17 +68,14 @@ class Currency:
             return NotImplemented
         return self
         
-    
-
-
 c1 = Currency('dollar', 5)
 c2 = Currency('dollar', 10)
 c3 = Currency('shekel', 1)
 c4 = Currency('shekel', 10)
 
-# print(str(c1))
+print(str(c1))
 # print(int(c1))
-# print(repr(c1))
+print(repr(c1))
 # print(c1 + 5)
 # print(c1 + c2)
 # print(c1)
@@ -86,4 +83,4 @@ c4 = Currency('shekel', 10)
 # print(c1)
 # c1 += c2
 # print(c1)
-print(c1 + c3)
+# print(c1 + c3)
