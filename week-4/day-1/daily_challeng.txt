@@ -1,0 +1,35 @@
+-- insert into actors (first_name, last_name, age, number_oscars)
+-- values ('Matt','Damon','08/10/1970', 5),
+-- ('George','Clooney','06/05/1961', 2);
+
+-- insert into actors (first_name, last_name, age, number_oscars)
+-- values ('Meryl', 'Streep', '1949-06-22', 3),
+--  ('Viola', 'Davis', '1965-08-11', 1 );
+
+-- insert into actors (first_name, last_name, age, number_oscars)
+-- values 
+-- ('Denzel', 'Washington', '1954-12-28', 2),
+-- ('Tom', 'Hanks', '1956-07-09', 2),
+-- ('Nicole', 'Kidman', '1967-06-20', 1);
+-- select * from actors where age > '1960-01-01' limit 1 offset 1;
+-- select first_name, last_name from actors where last_name ilike 'd%';
+-- select * from actors where age > '1960-01-01' order by first_name asc;
+-- select * from actors;
+-- select * from actors limit 4;
+-- select * from (select * from actors limit 4)as ordered_names order by last_name desc;
+-- select * from actors where first_name ilike '%e%';
+-- select * from actors where number_oscars >= 5;
+
+-- update actors set first_name = 'Maty' where first_name = 'Matt';
+-- update actors set number_oscars = 4 where first_name = 'George';
+-- alter table actors rename column age to birthdate;
+-- delete from actors where actor_id = 3;
+-- RETURNING 'Meryl', 'Streep', '1949-06-22', 3;
+-- INSERT INTO actors (first_name, last_name, birthdate, number_oscars)
+-- VALUES ('Meryl', 'Streep', '1949-06-22', 3);
+-- RETURNING *;
+
+-- select * from actors;
+-- select count (*) from actors;
+insert into actors (first_name, last_name, birthdate, number_oscars)
+values ('Emma', 'Stone', '1988-11-06');
