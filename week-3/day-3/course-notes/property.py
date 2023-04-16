@@ -3,8 +3,8 @@ class Person:
     def __init__(self, name) -> None:
         self.__name = name
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-    @property
+
+    @property   # makes a method act like an attribute
     def name(self):
         return self.__name
     

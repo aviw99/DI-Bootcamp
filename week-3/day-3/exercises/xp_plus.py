@@ -37,4 +37,4 @@ def abs_jan_first():
     days_left = time_left.days
     hours_left = time_left
     print(f'The 1st of January is in {time_left} hours.')
-abs_jan_first()
+# abs_jan_first()

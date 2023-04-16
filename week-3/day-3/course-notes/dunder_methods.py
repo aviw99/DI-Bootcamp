@@ -15,7 +15,7 @@ class Car:
     
     #    +,   -,   +=
     def __add__(self, other_car):
-        return self.speed + int
+        return self.speed +other_car.speed
     
     def __iadd__(self, other_car):
         self.speed += other_car.speed
@@ -25,4 +25,4 @@ car1 = Car(200, 100)
 car2 =Car(300,80)
 
 car1 += car2
-print(car1 + 1000)
+print(car1.speed)

@@ -1,4 +1,5 @@
 from math import pi
+import turtle
 
 class Circle(object):
  
@@ -45,4 +46,5 @@ circle2 = Circle(radius = 4.0)
 # print(circle1 == circle2)
 # print(circle1 > circle2)
 # print(circle1 < circle2)
-print(circle1.sorted_list(circle2))
+# print(circle1.sorted_list(circle2))
+# turtle.circle(circle1.radius ** 2)

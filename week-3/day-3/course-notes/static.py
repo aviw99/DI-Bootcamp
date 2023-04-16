@@ -8,7 +8,7 @@ class Useful:
     def multiply_by_19(number:int):
         return number * 19
     
-
+    
 w = Useful.capitulize_word('word')
 print(w)
 
