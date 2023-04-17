@@ -1,0 +1,31 @@
+-- create table FirstTab (
+-- 	id integer,
+-- 	name varchar (10)
+-- );
+-- insert into FirstTab values
+-- (5, 'Pawan'),
+-- (6, 'Sharlee'),
+-- (7, 'Krish'),
+-- (null, 'Avtaar');
+-- insert into FirstTab values(78,'Steve');
+-- select * from FirstTab;
+-- create table Secondtab (
+-- 	id integer
+-- );
+-- insert into Secondtab values
+-- (5),
+-- (null);
+-- select * from Secondtab;
+-- SELECT COUNT(*) 
+--     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NULL );output is 0
+-- SELECT COUNT(*) 
+--     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 );output is 2
+-- SELECT COUNT(*) 
+--     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab ); output 0
+-- SELECT COUNT(*) 
+--     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NOT NULL );output 3
+
+
+
+
+
