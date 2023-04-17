@@ -1,0 +1,44 @@
+-- -- exercise 1
+-- select * from customers;
+-- select * from items; 
+-- select item_name from items order by item_price asc;
+-- select item_name from items where item_price >= 80 order by item_price desc;
+-- select *, -customer_id from customers order by first_name limit 3;
+-- select last_name from customers order by last_name desc;
+
+-- -- exercise 2
+-- select * from customer;
+-- select (first_name, last_name) as full_name from customer;
+-- select distinct create_date from customer;
+-- select * from customer order by first_name desc;
+-- select film_id, title, description, release_year, rental_rate from film order by rental_rate asc;
+-- select address, phone from address where district = 'Texas';
+-- select * from film where film_id in (15, 150);
+-- SELECT film_id, title, description, length, rental_rate 
+-- FROM film 
+-- WHERE title IN (
+--   'Chamber Italian',
+--   'Grosse Wonderful',
+--   'Airport Pollock',
+--   'Bright Encounters',
+--   'Academy Dinosaur',
+--   'Ace Goldfinger',
+--   'Adaptation Holes',
+--   'Affair Prejudice',
+--   'African Egg',
+--   'Agent Truman'
+-- );
+-- select film_id, title, description, length, rental_rate from film where title ilike 'an%';
+-- select * from film order by rental_rate asc limit 10;
+-- select * from film order by rental_rate asc offset 10 fetch next 10 rows only;
+-- select first_name, last_name, amount, payment_date 
+-- from customer
+-- join payment
+-- on customer.customer_id = payment.customer_id;
+-- select * from film where film_id not in (select film_id from inventory);
+-- select city, country from city join country on country.country_id = city.country_id;
+-- select customer.customer_id, first_name, last_name, amount, payment_date, staff_id
+-- from customer
+-- join payment
+-- on customer.customer_id = payment.customer_id
+-- order by payment.staff_id;
