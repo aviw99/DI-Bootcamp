@@ -1,0 +1,2 @@
+1. venv: [in terminal] python3 -m venv my_env
+2. activate my_env: [in terminal] source my_env/bin/activate
