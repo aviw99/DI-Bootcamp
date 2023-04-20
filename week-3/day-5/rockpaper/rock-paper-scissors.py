@@ -11,18 +11,30 @@ def get_user_menu_choice():
         choice = input("please input a valid choice: ")
     return choice    
 
-
-
 def print_results(results):
     pass
 
 def main():
-    # new_game = Game()
-    choice = ''
-    get_user_menu_choice()
-    # if choice == '1':
-    #     new_game.get_user_item()
+    
+    
+    initial_input = get_user_menu_choice()
+    if initial_input == '1':
+        print('new game starting...')
+        user_input = Game().get_user_item()
+      
+        
+         
+        print(user_input)
+
+
+
+
+    elif initial_input == '2':
+        print('showing scores...')
+    elif initial_input == '':
+        print('goodbye')
+    
+  
 
 
 main()
-# get_user_menu_choice()

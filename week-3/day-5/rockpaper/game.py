@@ -8,9 +8,11 @@ class Game():
 
     def get_user_item(self):
         self.user_choice = input("select: 'rock/'paper'/'scissors' ")
+       
         while self.user_choice not in ['rock','paper','scissor']:
             self.user_choice = input("please input a valid choice: ")
-        return self.user_choice
+        else:
+            return self.user_choice
 
     def get_computer_item(self):
         return choice(['rock','paper','scissors'])
@@ -28,7 +30,7 @@ class Game():
         return self.get_game_result()
     
 
-
+Game.get_user_item('rock')
 
 
 
