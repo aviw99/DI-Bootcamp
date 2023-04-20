@@ -1,0 +1,22 @@
+                starting with django
+
+1. [terminal] django-admin startproject mysite
+                
+2. cd into mysite_root
+
+    manage.py is the project runner (runs server, runs tests)
+
+3. python3 manage.py startapp polls
+
+4. add 'polls' into INSTALLED_APPS in mysite.settings.py
+
+5. inside polls.views.py create a views
+
+6. inside mysite.urls.py 
+    - from polls.views import index
+    - add a path to the index view (example,path('index/, index))
+
+7. create the templates folder inside the app (polls)
+
+8. inside the templates folder create templates/html files (index.html)
+

@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>django project</title>
+</head>
+<body>
+    <h1>Homepage</h1>
+    <h2>Today it's {{weather}} outside</h2>
+    <h2>The current date is {{current_time}}</h2>
+    {{current_hour}}
+    {% if current_hour < 12  %}
+        morning
+        {%endif%}
+</body>
+</html>
