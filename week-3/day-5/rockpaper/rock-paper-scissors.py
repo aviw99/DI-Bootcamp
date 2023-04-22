@@ -14,21 +14,30 @@ def get_user_menu_choice():
 def print_results(results): 
     pass
 
+
+
 def main():
-    initial_input = get_user_menu_choice()
-    if initial_input == '1':
-        print('new game starting...')
-        game = Game()
-        while True:
-            user_input = game.get_user_item() 
-            
-            print(user_input + ' - first iteration')
-            if user_input in ['rock','paper','scissors']:
-                print(user_input + ' - final iteration')
-                break
-    elif initial_input == '2':
-        print('showing scores...')
-    elif initial_input == '':
-        print('goodbye')
-    
+    while True:
+        initial_input = get_user_menu_choice()
+        if initial_input == '1':
+            print('NEW GAME STARTING...')
+            # user_item: str
+            # computer_item: str
+            game = Game()
+            a = Game.get_user_item
+            b = game.get_computer_item
+            print(f'results: you chose {a}, the computer chose {b}' )
+            if a == b:
+                print("it's not a draw")
+            # elif user_item == computer_item:
+            #     print("it's a draw")
+            break
+        elif initial_input == '2':
+            print('SHOWING SCORES...')
+            break
+        elif initial_input == '':
+            print('GOODBYE')
+            break
+    # if game.get_user_item() == game.get_computer_item():
+        
 main()
