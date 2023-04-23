@@ -15,6 +15,6 @@ class Animal(models.Model):
     height = models.FloatField()
     speed = models.FloatField()
     family = models.ForeignKey(Family, on_delete=models.SET_NULL, null=True)
-    # image = models.URLField(blank=True, null=True)
+    image = models.URLField(blank=True, null=True)
 
 
