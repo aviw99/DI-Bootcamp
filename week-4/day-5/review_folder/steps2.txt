@@ -1,0 +1,41 @@
+Implementing Databases
+
+1. in settings.py specify the databases part
+
+2. create new database (in pgadmin)
+
+3. [terminal] python manage.py migrate
+    - might get error - pip install psycopg2-binary
+
+4. specify models inside the app folder, inside models.py
+
+5. [terminal] python  manage.py makemigrations
+            % python  manage.py migrate
+
+6. [terminal] python manage.py shell 
+    - importing and adding to database
+        >>> from info.models import Animal, Family
+        >>> felidae = Family(name='Felidae')
+        >>> felidae.save()
+
+        ~ exercise - 1. create caninea family, 2. create Dog animal, connect it to Caninae
+
+        - to get multiple instances all_animals = Animal.objects.all()
+        >>> all_animals
+        <QuerySet [<Animal: Animal object (1)>, <Animal: Animal object (2)>, <Animal: Animal object (3)>]>
+        >>> all_animals[0]
+        <Animal: Animal object (1)>
+
+
+
+
+
+
+        >>> mammal
+        <Family: Family object (3)>
+        >>> animal = Animal(name='Cow',legs=4,weight=12.67,height=7.2,speed=12,family=mammal)
+        >>> animal
+        <Animal: Animal object (None)>
+        >>> animal.save()
+        >>> animal
+        <Animal: Animal object (1)>

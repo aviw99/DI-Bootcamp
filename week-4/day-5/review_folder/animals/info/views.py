@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpRequest
 import json
+from .models import Animal, Family
 
 # Create your views here.
 def read_data(location: str, key: str):
@@ -16,14 +17,13 @@ def find_instance(data_list: list, id):
     return None
 
 def all_animals(request):
-    animals = read_data('data.json', 'animals')
-    context = {'animals': animals}
+    animals_list = Animal.objects.all()
+    context = {'animals': animals_list}
     return render(request, 'animals.html', context)
 
 def animal(request: HttpRequest, id: int):
-    animals = read_data('data.json', 'animals')
-    instance = find_instance(animals, id)
-    context = {'animal': instance}
+    animal_instance = Animal.objects.get(id=id)
+    context = {'animal': animal_instance}
     return render(request, 'animal.html', context)
 
 def family(request: HttpRequest, id: int):
@@ -31,3 +31,5 @@ def family(request: HttpRequest, id: int):
     instance = find_instance(families, id)
     context = {'family': instance}
     return render(request, 'family.html', context)
+
+
