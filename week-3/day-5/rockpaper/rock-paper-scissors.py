@@ -14,8 +14,6 @@ def get_user_menu_choice():
 def print_results(results): 
     pass
 
-
-
 def main():
     while True:
         initial_input = get_user_menu_choice()
