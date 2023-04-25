@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do</title>
+    <style>
+        button:hover{width: 80px;}
+    </style>
+</head>
+<body style="background-color: rgb(213, 255, 241);">
+    {% for todo in todo_list%}
+    <h3>title: {{todo.title}}</h3>
+    <p>creation date : {{todo.date_creation}}</p>
+    <p>deadline date : {{todo.deadline_date}}</p>
+    <p>category : {{todo.category}}</p>
+    <button style="padding: .5rem; background-color: red;border-radius: 10px ; color: white;font-weight: bold;">DONE</button>
+    {%endfor%}
+    <br>
+    <a href="{% url 'add_todo' %}">add todo item</a>
+</body>
+</html>
