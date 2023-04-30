@@ -17,6 +17,6 @@ class CategoryForm(forms.ModelForm):
     # name = forms.CharField(label='new category', max_length=50)
 
 class Likes(forms.Form):
-    gif = forms.ModelChoiceField(queryset=Gif.objects.all())
-    like = forms.BooleanField()
-    dislike = forms.BooleanField()
+    gif = forms.ModelChoiceField(queryset=Gif.objects.all(), widget=forms.HiddenInput())
+    like = forms.BooleanField(required=False, widget=forms.HiddenInput())
+    # dislike = forms.BooleanField()

@@ -21,4 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('add_new_task/', include('to_do.urls')),
+    
 ]

@@ -1,0 +1,308 @@
+.body {
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+.wrap {
+    margin: 0;
+    display: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    /* object-fit: cover; */
+}
+.box4 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px white;
+    width:  23.3vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    /* opacity: 0.9; */
+    /* background-color: rgb(132, 255, 50); */
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    z-index: 0;
+    transition: all 0.5s ease;
+}
+.box4:not(.active):hover,
+.box4.active{
+    width: 500px;
+    height: auto;
+    z-index: 5;
+    opacity: 1;
+    /* background-color: rgba(23, 197, 35, 0.872); */
+}
+.box5 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px silver;
+    width: 30vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+    /* background-color: rgba(20, 142, 51, 0.364); */
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.box5:not(.active):hover,
+.box5.active{
+    top: 10px;
+    width: 500px;
+    height: auto;
+    z-index: 4;
+    opacity: 1;
+    /* background-color: rgba(23, 197, 35, 0.872); */
+}
+.box6 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px gold;
+    width: 40vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    /* background-color: rgba(23, 197, 35, 0.388); */
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.box6:not(.active):hover,
+.box6.active{
+    width: 500px;
+    height: auto;
+    margin-top: -200px;   
+    z-index: 5;
+    opacity: 1;
+    /* background-color: rgba(23, 197, 35, 0.872); */
+}
+.box4_2 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px red;
+    width:  23.3vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: rgb(255, 183, 50); */
+    position: absolute;
+    top: 50px;
+    left: 810px;
+    transition: all 0.5s ease;
+    transform: rotate(-0.6deg);
+    z-index: 0;
+}
+.box4_2:not(.active):hover,
+.box4_2.active{
+    width: 500px;
+    height: auto;
+    /* position: absolute; */
+    top: 250px;
+    margin-top: -200px;  
+    transform: rotate(0.6deg); 
+    z-index: 5;
+    /* background-color: rgba(23, 197, 35, 0.872); */
+}
+.box5_2 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px yellow;
+    width: 30vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+    /* background-color: rgb(134, 142, 20); */
+    position: absolute;
+    top: 150px;
+    left: 910px;
+    transform: rotate(-0.6deg);
+    transition: all 0.5s ease;
+}
+.box5_2:not(.active):hover,
+.box5_2.active{
+    width: 500px;
+    height: auto;
+    /* position: absolute; */
+    top: 350px;
+    margin-top: -200px;   
+    transform: rotate(0.6deg);
+    z-index: 5;
+    opacity: 1;
+    /* background-color: rgba(23, 197, 35, 0.872); */
+}
+.box6_2 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px blue;
+    width: 40vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    /* background-color: rgb(197, 61, 23); */
+    position: absolute;
+    top: 250px;
+    /* right: 900px; */
+    left: 1010px;
+    transition: all 0.5s ease;
+    transform: rotate(-0.6deg);
+    z-index: 0;
+}
+.box6_2:not(.active):hover,
+.box6_2.active{
+    width: 500px;
+    height: auto;
+    margin-top: -200px;   
+    position: absolute;
+    top: 300px;
+    left: 900px;
+    /* right: 900px; */
+    transform: rotate(0.6deg);
+    z-index: 3;
+    opacity: 1;
+}
+
+.box4_3 {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px green;
+    width:  24vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: rgb(214, 50, 255); */
+    position: absolute;
+    top: 20px;
+    left: 1220px;
+    z-index: -1;
+    transition: all 0.5s ease;
+    transform: rotate(-1.2deg);
+}
+.box4_3:not(.active):hover,
+.box4_3.active{
+    width: 500px;
+    height: auto;
+    margin-top: -200px;   
+    position: absolute;
+    top: 250px;
+    left: 900px;
+    transform: rotate(1.2deg);
+    z-index: 1;
+}
+
+.box4_4- {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px purple;
+    width:  15vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    /* background-color: rgb(50, 122, 255); */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: all 0.5s ease;
+    transform: rotate(0.6deg);
+    z-index: -10;
+}
+.box4_4-:not(.active):hover,
+.box4_4-.active{
+    width: 200px;
+    height: auto;
+    margin-top: -200px;   
+    position: absolute;
+    top: 205px;
+    right: -900px;
+    transform: rotate(-0.6deg);
+    z-index: 3;
+}
+.box5_4- {
+    border-top: solid 2px pink;
+    /* border-left: solid 2px white; */
+    width: 25vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+    /* background-color: rgb(69, 20, 142); */
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    transition: all 0.5s ease;
+    transform: rotate(0.6deg);
+}
+.box5_4-:not(.active):hover,
+.box5_4-.active{
+    width: 300px;
+    height: auto;
+    margin-top: -200px;   
+    position: absolute;
+    top: 300px;
+    right: -900px;
+    transform: rotate(-0.6deg);
+    z-index: 2;
+    opacity: 1;
+}
+.box6_4- {
+    /* border-left: solid 2px white; */
+    border-top: solid 2px orange;
+    width: 40vmin;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+    /* background-color: rgba(23, 43, 197, 0.388); */
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    transition: all 0.5s ease;
+    transform: rotate(0.6deg);
+    z-index: 1;
+
+}
+.box6_4-:not(.active):hover,
+.box6_4-.active{
+    /* border: none; */
+    width: 500px;
+    height: auto;
+    margin-top: -200px;   
+    position: absolute;
+    top: 300px;
+    right: -900px;
+    transform: rotate(-0.6deg);
+    z-index: 3;
+    opacity: 1;
+}
+
+.text_box{
+    text-align: center;
+    border: solid 2px white;
+    padding: 60px 100px 60px 100px;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 630px;
+    left: 70px;
+    width: 200px;
+    /* z-index: 100; */
+}
+.fullscreen{
+    width: 8%;
+    height: auto;
+    filter: invert(1);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* .fullscreenlink{
+    color: white;
+} */
+/* #box4 {
+    display: relative;
+} */
