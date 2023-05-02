@@ -58,6 +58,13 @@ def gif_view(request):
 def gif_id_view(request, id):
     gif = GifModel.objects.get(id=id)
     context = {'gif': gif}
+    if request.method == 'POST':
+        if 'like' in request.POST:
+            gif.likes += 1
+            gif.save()
+        elif 'dislike' in request.POST:
+            gif.likes -= 1
+            gif.save()
     return render(request, 'app/gif_by_id.html', context)
 
 def id_gif_view(request):
@@ -67,3 +74,8 @@ def id_gif_view(request):
     else:
         return render(request, 'app/id_gif.html')
     
+def likes_view(request):
+    likes = GifModel.objects.all()
+    liked = likes.order_by('-likes')
+    context = {'liked': liked}
+    return render(request, 'app/likes.html', context)

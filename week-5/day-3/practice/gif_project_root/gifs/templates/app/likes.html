@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div > 
+        {% for like in liked %}
+            {% if like.likes >= 1  %}
+                _{{like.title}}_
+                {{like.likes}}<br>
+            {% endif %}
+        {% endfor %}
+    </div>       
+{% endblock %}

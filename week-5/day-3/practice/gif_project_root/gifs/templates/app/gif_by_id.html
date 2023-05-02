@@ -2,4 +2,9 @@
 {% block content %}
     {{ gif.title }}
     <a href="/gif">return</a>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" name="like" style="background-color: green; color: white;">Like</button>
+        <button type="submit" name="dislike" style="background-color: red; color: white;">Dislike</button>
+    </form>
 {% endblock %}
