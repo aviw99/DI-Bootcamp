@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="POST" action="{% url 'id-gif'%}">
+
+        {% csrf_token %}
+
+        <label for="gif_id">Gif ID:</label>
+        <input type="number" name="gif_id" id="gif_id" required>
+        <button type="submit">Submit</button>
+
+    </form>
+{% endblock %}

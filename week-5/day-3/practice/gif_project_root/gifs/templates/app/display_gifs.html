@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div style="display: flex; flex-direction: column;">
+        {% for gif in gifs %}
+            
+            <img style="width: 10%;" src="{{gif.url}}">
+
+        {% endfor %}
+    </div>    
+{% endblock %}

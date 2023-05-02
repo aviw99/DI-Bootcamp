@@ -1,0 +1,9 @@
+
+{% extends 'base.html' %}
+{% block content %}
+    <div style="display: flex; flex-direction: column;">
+        {% for gif in gifs %}
+        <a href="{% url 'gif-by-id' gif.id %}">{{gif.title}}</a>
+        {% endfor %}
+    </div>    
+{% endblock %}

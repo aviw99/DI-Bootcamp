@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form method="POST" action="{% url 'id-category'%}">
+
+        {% csrf_token %}
+
+        <label for="category_id">Category ID:</label>
+        <input type="number" name="category_id" id="category_id" required>
+        <button type="submit">Submit</button>
+
+    </form>
+{% endblock %}

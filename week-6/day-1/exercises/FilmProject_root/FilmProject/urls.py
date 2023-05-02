@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 # from films import views
 from films.views import addFilm, addDirector, homepage, addCategory, updateDirector, updateFilm
 
@@ -11,4 +11,5 @@ urlpatterns = [
     path('updateDirector/<int:pk>', updateDirector.as_view(), name='update_director'),
     path('addCategory', addCategory.as_view(), name = 'add_category'),
     path('updateFilm/<int:pk>', updateFilm.as_view(), name='update_film'),
+    path('accounts/', include('accounts.urls')),
 ]
