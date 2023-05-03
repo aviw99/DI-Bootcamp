@@ -28,8 +28,8 @@ class Vehicle(models.Model):
     real_cost = models.IntegerField()
     size = models.ForeignKey(VehicleSize, on_delete=models.CASCADE)
     def __str__(self):
-        return f'{self.vehicle_type}'
-
+        return f'{self.vehicle_type}.{self.id}'
+    
 class Rental(models.Model):
     rental_date = models.DateField(null=True)
     return_date = models.DateField(null=True)
