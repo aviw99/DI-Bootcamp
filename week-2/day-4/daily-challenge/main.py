@@ -8,17 +8,32 @@ matrix = [
     '#t%',
     '^r!'
 ]  
-# Combine characters from the same column and ignore non-alpha characters
-text = ''
-for col in range(len(matrix[0])):
-    for row in range(len(matrix)):
-        if matrix[row][col].isalpha():
-            text += matrix[row][col]
-# for char in matrix:
-#     if char.isalpha == True:
-#         continue
-#     else: 
-#         if char enumerate(matrix[+1]).isalpha == False:
-#             char = '  '
-print(text)
- 
+
+first = []
+second = []
+third = []
+
+for index, el in enumerate(matrix):
+    if el[0].isalpha():
+        first.append(el[0])
+    elif index < len(matrix)-1 and not matrix[index +1][0].isalpha():
+        if not matrix[index-1][0].isalpha():
+            first.append(' ')
+
+    if el[1].isalpha():
+        second.append(el[1])
+    elif index < len(matrix)-1 and not matrix[index+1][1].isalpha():
+        second.append(' ')  
+
+    if el[2].isalpha():
+        third.append(el[2])    
+    elif index < len(matrix) -1 and not matrix[index+1][2].isalpha(): 
+        third.append(' ')
+
+first = ''.join(first)
+second = ''.join(second)
+third = ''.join(third)
+the_list = [first,second,third]
+result = ''.join(the_list)
+
+print(result)

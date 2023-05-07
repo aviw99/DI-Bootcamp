@@ -7,7 +7,7 @@ urlpatterns = [
     path('', views.get_by_number, name='index'),
     path('add_person/', add_person_view, name='add-person'),
     path('search_num/', search_by_number_view, name='search-num'),
-    path('<str:phone_number>/', get_by_number, name='get_by_number'),
     path('<str:name>/', get_by_name, name='get_by_name'),
+    path('<str:phone_number>/', get_by_number, name='get_by_number'),
     
 ]
