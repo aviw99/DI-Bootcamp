@@ -1,0 +1,8 @@
+a class is a blueprint for creating objects
+an instance is an object
+encapsulation refers to the practice of keeping code in  aclass seperate from the rest of the code. this prevents other parts of the code from intefering with the objects state.
+abstraction is a concept in programming that refers to the proccess of hiding the details and presenting to the user only the relevant information. all that is required is to know what input will produce what output.
+inheritance is a concept in OOP which refers to the idea of one class taking certain traits from another. the benefit of using inheritance is that it allows you to reuse code and avoid redundancy.
+multiple inheritance means an class can inherit from more than 1 parent class.
+polymorphism is the idea that an object can take many forms depending on what action is performed on them. by writing code that can with a variety of different types of objects you can make it more adaptable and easier to maintain.
+method resolution order or MRO is the order that python uses to look for methods and attributes in a hierachy of classes.
