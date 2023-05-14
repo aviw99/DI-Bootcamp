@@ -74,6 +74,7 @@ with open(filename, 'r')as file:
    salary = employee['payable']['salary']
    print(salary)
    
+   
 employee['birth_date']='1998'
 
 
