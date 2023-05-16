@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Exercises</h1>
+    <h3>🌟 Exercise 1 : List Of People    </h3>
+    <h3>Instructions</h3>
+    <h4>Part I - Review About Arrays</h4>
+    <p>const people = ["Greg", "Mary", "Devon", "James"];</p>
+    <ol>
+        <li>Write code to remove “Greg” from the people array.
+        </li>
+        <li>Write code to replace “James” to “Jason”.
+        </li>
+        <li>Write code to add your name to the end of the people array.
+        </li>
+        <li>Write code that console.logs Mary’s index. take a look at the indexOf method on Google.
+        </li>
+        <li>Write code to make a copy of the people array using the slice method.
+            <ul>
+                <li>The copy should NOT include “Mary” or your name.
+                </li>
+                <li>Hint: remember that now the people array should look like this const people = ["Mary", "Devon", "Jason", "Yourname"];
+                </li>
+                <li>Hint: Check out the documentation for the slice method
+                </li>
+            </ul></li>
+        <li>Write code that gives the index of “Foo”. Why does it return -1 ?
+        </li>
+        <li>Create a variable called last which value is the last element of the array.<ul><li>Hint: What is the relationship between the index of the last element in the array and the length of the array?
+        </li></ul>
+        </li>
+    </ol>
+    <h4>Part II - Loops</h4>
+    <ol>
+        <li>Using a loop, iterate through the people array and console.log each person.
+        </li>
+        <li>Using a loop, iterate through the people array and exit the loop after you console.log “Jason” .<ul><li>Hint: take a look at the break statement in the lesson.
+        </li></ul>
+        </li>
+    </ol>
+    <hr>
+    <h1>🌟 Exercise 2 : Your Favorite Colors</h1>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Create an array called colors where the value is a list of your five favorite colors.
+        </li>
+        <li>Loop through the array and as you loop console.log a string like so: “My #1 choice is blue”, “My #2 choice is red” ect… .
+        </li>
+        <li>Bonus: Change it to console.log “My 1st choice”, “My 2nd choice”, “My 3rd choice”, picking the correct suffix for each number.<ul><li>Hint : create an array of suffixes to do the Bonus
+        </li></ul>
+        </li>
+    </ol>
+    <hr>
+    <h1>🌟 Exercise 3 : Repeat The Question
+    </h1>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Prompt the user for a number.<ul><li>Hint : Check the data type you receive from the prompt (ie. Use the typeof method)
+        </li></ul>
+        </li>
+        <li>While the number is smaller than 10 continue asking the user for a new number.<ul><li>Tip : Which while loop is more relevant for this situation?
+        </li></ul>
+        </li>
+    </ol>
+    <hr>
+    <h1>🌟 Exercise 4 : Building Management
+    </h1>
+    <h3>Instructions</h3>
+    <p>const building = {<br>
+        numberOfFloors: 4,<br>
+        numberOfAptByFloor: {<br>
+            firstFloor: 3,<br>
+            secondFloor: 4,<br>
+            thirdFloor: 9,<br>
+            fourthFloor: 2,<br>
+        },<br>
+        nameOfTenants: ["Sarah", "Dan", "David"],<br>
+        numberOfRoomsAndRent:  {<br>
+            sarah: [3, 990],<br>
+            dan:  [4, 1000],<br>
+            david: [1, 500],<br>
+        },<br>
+    }</p>
+    <h4>Review About Objects
+    </h4>
+    <ol>
+        <li>Copy and paste the above object to your Javascript file.
+        </li>
+        <li>Console.log the number of floors in the building.
+        </li>
+        <li>Console.log how many apartments are on the floors 1 and 3.
+        </li>
+        <li>Console.log the name of the second tenant and the number of rooms he has in his apartment.
+        </li>
+        <li>Check if the sum of Sarah’s and David’s rent is bigger than Dan’s rent. If it is, than increase Dan’s rent to 1200.
+        </li>
+    </ol>
+    <hr>
+    <h1>🌟 Exercise 5 : Family
+    </h1>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Create an object called family with a few key value pairs.
+        </li>
+        <li>Using a for in loop, console.log the keys of the object.
+        </li>
+        <li>Using a for in loop, console.log the values of the object.
+        </li>
+    </ol>
+    <hr>
+    <h1>Exercise 6 : Rudolf
+    </h1>
+    <h3>Instructions</h3>
+    <p>const details = {<br>
+        my: 'name',<br>
+        is: 'Rudolf',<br>
+        the: 'raindeer'<br>
+      }<br></p>
+      <ol><li>Given the object above and using a for loop, console.log “my name is Rudolf the raindeer”
+    </li></ol>
+    <hr>
+    <h1>Exercise 7 : Secret Group
+    </h1>
+    <h3>Instructions</h3>
+    <p>const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+    </p>
+    <ol>
+        <li>A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.<ul><li>Hint: a string is an array of letters
+        </li></ul>
+        </li>
+        <li>Console.log the name of their secret society. The output should be “ABJKPS”
+        </li>
+    </ol>
+</body>
+</html>
