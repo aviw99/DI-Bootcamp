@@ -29,7 +29,7 @@ for(let planet in planets){
         let moon_color = Math.floor(Math.random()*16777215).toString(16);
         new_moon.style.backgroundColor = '#'+moon_color;
         new_planet.appendChild(new_moon);
-        new_moon.style.left = counter +"px";
+        new_moon.style.left = counter + "px";
     }
 }
 

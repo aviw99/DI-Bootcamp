@@ -33,8 +33,6 @@ def add_point(player):
 
 def display_score():
     print("""
-    
-    
     current score: """)
     for _ in range(1):
         print(f'{scores}')
@@ -44,24 +42,10 @@ def main():
         menu_choice = menu()
         if menu_choice == '1':
             print("""
-            
-            
-
-
-            
-
-            
-
-
-
             ...NEW GAME STARTING...""")
             a = get_user_item()
             b = get_computer_item()
             print(f"""
-
-
-
-
             you chose:          {a}
             the computer chose: {b}""")
             if a == b:
