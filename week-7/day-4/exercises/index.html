@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        pre {
+          background-color: #f5f5f5;
+          padding: 10px;
+          font-family: Consolas, monospace;
+          white-space: pre-wrap;
+          width: 50%;
+        }
+      </style>
+</head>
+<body>
+    <h1>
+        🌟 Exercise 1 : Find The Numbers Divisible By 23
+    </h1>
+    <h3>
+        Instructions
+    </h3>
+
+    <ol>
+        <li>
+            Create a function call isDivisible() that takes no parameter.
+        </li>
+        <li>
+            In the function, loop through numbers 0 to 500.
+
+        </li>
+        <li>
+            Console.log all the numbers divisible by 23.
+
+        </li>
+        <li>
+            At the end, console.log the sum of all numbers that are divisible by 23.
+
+<p>Outcome : 0 23 46 69 92 115 138 161 184 207 230 253 276 299 322 345 <br>
+    368 391 414 437 460 483<br>
+    Sum : 5313
+    </p>
+        </li>
+        <li>
+            Bonus: Add a parameter divisor to the function.
+
+<p>isDivisible(divisor)
+<br><br>
+    Example:<br>
+    isDivisible(3) : Console.log all the numbers divisible by 3, <br>
+    and their sum<br>
+    isDivisible(45) : Console.log all the numbers divisible by 45, <br>
+    and their sum</p>
+        </li>
+    
+    </ol>
+    <hr>
+    <h1>
+        🌟 Exercise 2 : Shopping List
+
+    </h1>
+    <h3>
+        Instructions
+    </h3>
+    <p>
+        const stock = { <br>
+            "banana": 6, <br>
+            "apple": 0,<br>
+            "pear": 12,<br>
+            "orange": 32,<br>
+            "blueberry":1<br>
+        } <br> <br>
+        
+        const prices = {    <br>
+            "banana": 4, <br>
+            "apple": 2, <br>
+            "pear": 1,<br>
+            "orange": 1.5,<br>
+            "blueberry":10<br>
+        } 
+    </p>
+    <ol>
+        <li>
+            Add the stock and prices objects to your js file.
+
+        </li>
+        <li>
+            Create an array called shoppingList with the following items: “banana”, “orange”, and “apple”. It means that you have 1 banana, 1 orange and 1 apple in your cart.
+
+        </li>
+        <li>
+            Create a function called myBill() that takes no parameters.
+
+        </li>
+        <li>
+            The function should return the total price of your shoppingList. In order to do this you must follow these rules:
+<ol>
+    <li>
+        The item must be in stock. (Hint : check out if .. in)
+
+</li>
+<li>
+    If the item is in stock find out the price in the prices object.
+
+</li>
+</ol>
+        </li>
+        <li>
+            Call the myBill() function.
+
+        </li>
+        <li>
+            Bonus: If the item is in stock, decrease the item’s stock by 1
+
+        </li>
+    </ol>
+    <hr>
+    <h1>
+        🌟 Exercise 3 : What’s In My Wallet ?
+
+    </h1>
+    <h3>
+        Instructions
+    </h3>
+    <p>
+        Note: Read the illustration (point 4), while reading the instructions
+
+
+    </p>
+    <ol>
+        <li>
+            Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
+<ul><li>an item price
+</li>
+<li>and an array representing the amount of change in your pocket.
+</li></ul>
+        </li>
+        <li>
+            In the function, determine whether or not you can afford the item.
+<ul>
+    <li>If the sum of the change is bigger or equal than the item’s price (ie. it means that you can afford the item), the function should return true
+    </li>
+    <li>If the sum of the change is smaller than the item’s price (ie. it means that you cannot afford the item) the function should return false
+    </li>
+</ul>
+        </li>
+        <li>
+            Change will always be represented in the following order: quarters, dimes, nickels, pennies.
+
+        </li>
+        <p>
+            A quarters is 0.25<br>
+A dimes is 0.10<br>
+A nickel is 0.05<br>
+A penny is 0.01<br>
+        </p>
+        <li>
+            To illustrate:
+<p>After you created the function, invoke it like this:<br>
+    changeEnough(4.25, [25, 20, 5, 0])
+
+</p>
+<ul>
+    <li>The value 4.25 represents the item’s price
+    </li>
+    <li>The array [25, 20, 5, 0] represents 25 quarters, 20 dimes, 5 nickels and 0 pennies.
+    </li>
+    <li>The function should return true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50 which is bigger than 4.25 (the total amount due)
+    </li>
+</ul>
+        </li>
+        <p>
+            Examples<br>
+            changeEnough(14.11, [2,100,0,0]) => returns false<br>
+            changeEnough(0.75, [0,0,20,5]) => returns true<br>
+            
+  
+        </p>
+    </ol>
+    <hr>
+    <h1>
+        🌟 Exercise 4 : Vacations Costs
+
+    </h1>
+    <h3>
+        Instructions
+    </h3>
+    <p>
+        Let’s create functions that calculate your vacation’s costs:
+
+
+    </p>
+    <ol>
+        <li>
+            Define a function called hotelCost().
+            <ul>
+                <li>It should ask the user for the number of nights they would like to stay in the hotel.
+                </li>
+                <li>If the user doesn’t answer or if the answer is not a number, ask again.
+                </li>
+                <li>The hotel costs $140 per night. The function should return the total price of the hotel.
+                </li>
+            </ul>
+        </li>
+        <li>
+            Define a function called planeRideCost().
+<ul>
+    <li>It should ask the user for their destination.
+    </li>
+    <li>If the user doesn’t answer or if the answer is not a string, ask again.
+    </li>
+    <li>The function should return a different price depending on the location.
+<ul>
+    <li>“London”: 183$
+    </li>
+    <li>“Paris” : 220$
+    </li>
+    <li>All other destination : 300$
+    </li>
+</ul>    </li>
+</ul>
+        </li>
+        <li>
+            Define a function called rentalCarCost().
+<ul>
+    <li>It should ask the user for the number of days they would like to rent the car.
+    </li>
+    <li>If the user doesn’t answer or if the answer is not a number, ask again.
+    </li>
+    <li>Calculate the cost to rent the car. The car costs $40 everyday.<ul><li>If the user rents a car for more than 10 days, they get a 5% discount.
+    </li></ul>
+    </li>
+    <li>The function should return the total price of the car rental.
+    </li>
+</ul>
+        </li>
+        <li>
+            Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
+        </li>
+        <p>Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.<br>
+            Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside<br> the function totalVacationCost().</p>
+        <li>
+            Call the function totalVacationCost()
+
+        </li>
+        <li>
+            Bonus: Instead of using a prompt inside the 3 first functions, only use a prompt inside the totalVacationCost() function. You need to change the 3 first functions, accordingly.
+
+        </li>
+    </ol>
+    <hr>
+    <h1>
+        🌟 Exercise 5 : Users
+
+    </h1>
+    <h3>
+        Instructions
+
+    </h3>
+    <p>
+        Create a new structured HTML file and a new Javascript file<br>
+
+        <pre id="codeBlock1"></pre>
+
+    <script>
+      const code = `<div id="container">Users:</div>
+        <ul class="list">
+            <li>John</li>
+            <li>Pete</li>
+        </ul>
+        <ul class="list">
+            <li>David</li>
+            <li>Sarah</li>
+            <li>Dan</li>
+        </ul>`;
+
+      const codeBlock1 = document.getElementById('codeBlock1');
+      codeBlock1.textContent = code;
+    </script>
+        
+    </p>
+    <ol>
+        <li>
+            Add the code above, to your HTML file
+
+        </li>
+        <li>
+            Using Javascript:
+<ol>
+    <li>Retrieve the div and console.log it
+    </li>
+    <li>Change the name “Pete” to “Richard”.
+    </li>
+    <li>Delete the <li> that contains the text node “Sarah”. (It’s the second <li> of the second <ul>)
+    </li>
+    <li>Change each first name of the two <ul>'s to your name. (Hint : use a loop)
+    </li>
+</ol>
+        </li>
+        <li>
+            Using Javascript:
+<ol>
+    <li>Add a class called student_list to both of the <ul>'s.
+    </li>
+    <li>Add the classes university and attendance to the first <ul>.
+    </li>
+</ol>
+        </li>
+        <li>
+            Using Javascript:
+<ol>
+    <li>Add a “light blue” background color and some padding to the <div>.
+    </li>
+    <li>Do not display the <li> that contains the text node “John”. (the first <li> of the <ul>)
+    </li>
+    <li>Add a border to the <li> that contains the text node “Richard”. (the second <li> of the <ul>)
+    </li>
+    <li>Change the font size of the whole body.
+    </li>
+</ol>
+        </li>
+        <li>
+            Bonus: If the background color of the div is “light blue”, alert “Hello x and y” (x and y are the users in the div).
+
+        </li>
+       
+    </ol><hr>
+    <h1>
+        🌟 Exercise 6 : Change The Navbar
+
+    </h1>
+    <h3>
+        Instructions
+
+    </h3>
+    <p>
+        Create a new structured HTML file and a new Javascript file
+<pre id="codeBlock2"></pre>
+
+    <script>
+      const code2 = `<div id="navBar">
+    <ul>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">My Friends</a></li>
+        <li><a href="#">Messenger</a></li>
+        <li><a href="#">My Pics</a></li>
+    </ul>
+</div>`;
+
+      const codeBlock2 = document.getElementById('codeBlock2');
+      codeBlock2.textContent = code2;
+    </script>
+        
+
+    </p>
+    <ol>
+        <li>
+            Add the code above, to your HTML file
+        </li>
+        <li>
+            Using Javascript, in the <div>, change the value of the id attribute from navBar to socialNetworkNavigation, using the setAttribute method.
+ 
+        </li>
+        <li>
+            We are going to add a new <li> to the <ul>.
+<ol>
+    <li>First, create a new <li> tag (use the createElement method).
+    </li>
+    <li>Create a new text node with “Logout” as its specified text.
+    </li>
+    <li>Append the text node to the newly created list node (<li>).
+    </li>
+    <li>Finally, append this updated list node to the unordered list (<ul>), using the appendChild method.
+    </li>
+</ol>
+        </li>
+        <li>
+            Use the firstElementChild and the lastElementChild properties to retrieve the first and last <li> elements from their parent element (<ul>). Display the text of each link. (Hint: use the textContent property).
+        </li>
+        
+    </ol><hr>
+    <h1>
+        🌟 Exercise 7 : My Book List
+
+    </h1>
+    <h3>
+        Instructions
+
+    </h3>
+    <p>
+        Take a look at <a href="https://www.impressivewebs.com/10-essential-dom-methods-techniques-for-practical-javascript/" target="_blank">this link</a> for help.<br>The point of this challenge is to display a list of two books on your browser.
+
+
+    </p>
+    <ol>
+        <li>
+            In the body of the HTML page, create an empty section:
+            <pre id="codeBlock3"></pre>
+
+            <script>
+              const code3 = `<section class="listBooks"></section>
+`;
+        
+              const codeBlock3 = document.getElementById('codeBlock3');
+              codeBlock3.textContent = code3;
+            </script>
+
+        </li>
+        <li>
+            In the js file, create an array called allBooks. This is an array of objects. Each object is a book that has 4 keys (ie. 4 properties) : <ul>
+                <li>title,</li>
+                <li>author,
+                </li>
+                <li>image : a url,</li>
+                <li>alreadyRead : which is a boolean (true or false).
+                </li>
+            </ul>
+        </li>
+        <li>
+            Initiate the array with 2 books of your choice (ie. Add manually 2 books objects in the array)
+
+        </li>
+        <li>
+            Requirements : All the instructions below need to be coded in the js file:
+ <ol>
+    <li>Using the DOM, render each book inside a div (the div must be added to the <section> created in part 1).
+    </li><p>For each book :
+<br><ul>
+    <li>You have to display the book’s title and the book’s author.<br>
+        Example: HarryPotter written by JKRolling.
+        </li>
+    <li>The width of the image has to be set to 100px.
+    </li>
+    <li>If the book is already read. Set the color of the book’s details to red.
+    </li>
+</ul>    </p>
+ </ol>
+        </li>
+       
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>

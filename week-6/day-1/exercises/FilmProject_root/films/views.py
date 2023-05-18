@@ -5,7 +5,6 @@ from django.views import generic
 from .models import Director, Film, Category
 from .forms import AddDirectorForm, AddFilmForm, AddCategoryForm
 from django.urls import reverse_lazy
-# Create your views here.
 # def homepage(request):
 #     return render(request, 'homepage.html')
 

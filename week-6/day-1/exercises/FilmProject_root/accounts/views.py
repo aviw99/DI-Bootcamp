@@ -5,7 +5,7 @@ from django.views.generic import DetailView, CreateView
 from django.urls import reverse_lazy
 from .models import UserProfile
 
-# Create your views here.
+
 
 class ProfileView(DetailView):
     model = UserProfile
@@ -18,7 +18,9 @@ class SignUpView(CreateView):
     success_url = reverse_lazy('login')
     template_name = 'signup.html'
 
-def create_profile_view(request):
-    user = request.user
-    form = UserCreationForm(initial={'user': user})
+
+def create_profile_view(request, profile_id):
+    user = request.user.id
+    form = UserCreationForm(initial={'id': profile_id})
+
 
