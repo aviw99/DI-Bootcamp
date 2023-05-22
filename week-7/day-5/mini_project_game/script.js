@@ -4,7 +4,8 @@ function playTheGame(){
         alert('No problem, Goodbye')
     }else{
         let userNumber = null;
-        let computerNumber = null;
+        // let computerNumber = null;
+        let computerNumber = Math.floor(Math.random() * 11);
         let counter = 0;
         do{
             userNumber = prompt('Enter a number between 0 and 10');
@@ -16,7 +17,7 @@ function playTheGame(){
                 if(userNumber > 10 || userNumber < 0){
                     alert('Sorry it’s not a good number, Goodbye')
                 }else{
-                    computerNumber = Math.floor(Math.random() * 11);
+                    // computerNumber = Math.floor(Math.random() * 11);
                     console.log(computerNumber, userNumber);
                     counter++;
                     if(counter < 3){
