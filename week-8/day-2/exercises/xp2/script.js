@@ -63,7 +63,7 @@ function makeJuice(size){
     function displayJuice(){
         const body = document.querySelector('body');
         const sentence = document.createElement('p');
-        sentence.innerText = `The client wants a ${size} juice, containing ${ingredients[4]}, ${ingredients[1]}, ${ingredients[2]}`;
+        sentence.innerText = `The client wants a ${size} juice, containing ${ingredients[0]}, ${ingredients[1]}, ${ingredients[2]}, ${ingredients[3]}, ${ingredients[4]}, ${ingredients[5]}`;
         body.appendChild(sentence);
     }
     addIngredients('mango','banana','pinapple');
@@ -71,3 +71,5 @@ function makeJuice(size){
     displayJuice()
 }
 makeJuice('small')
+
+
