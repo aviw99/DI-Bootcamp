@@ -89,13 +89,13 @@ result "drow ni a nevig gnirts"
 
 // console.log(addSquare(2, 3))
 
-let a = 5;
-b = a;
-b++
-console.log(a,b);
+// let a = 5;
+// b = a;
+// b++
+// console.log(a,b);
 
-let arr1 = [1,2,3];
-let arr2 = [...arr1];
-arr2[1] = 5;
-console.log(arr1);
-console.log(arr2);
+// let arr1 = [1,2,3];
+// let arr2 = [...arr1];
+// arr2[1] = 5;
+// console.log(arr1);
+// console.log(arr2);
