@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a3df3fd-af65-4bd1-bd02-dede07909b00" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../week-7/day-1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-7/day-1/.idea/day-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-7/day-1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-7/day-1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-7/day-1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tic-tac-toe_3/images/grid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tic-tac-toe_3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tic-tac-toe_3/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-9/day-1/books_api/books_api/books_app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../week-9/day-1/books_api/books_api/books_app/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/drf_beginners/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/drf_beginners/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/drf_beginners/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/drf_beginners/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/drf_beginners/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/drf_beginners_root/posts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-7/day-1/requrements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tictactoe2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../tictactoe2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../week-9/day-1/books_api/books_api/books_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../week-9/day-1/books_api/books_api/books_app/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2QPlW4wg32VxBMfYYvTO3Kjl6Ny" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/aviweiss/Desktop/DI-Bootcamp/week-8/day-5/robot_website",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a3df3fd-af65-4bd1-bd02-dede07909b00" name="Changes" comment="" />
+      <created>1685263125959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1685263125959</updated>
+      <workItem from="1685263127416" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
