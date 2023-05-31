@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://c8.alamy.com/comp/HXJTH6/world-currencies-HXJTH6.jpg");
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+#container{
+    background-color: rgba(0, 128, 0, 0.66);
+    width: 50vw;
+    height: 70vh;
+    border-radius: 5%;
+    text-align: center;
+    display: block;
+    border: black solid 1px;
+}
+#form{
+    display: grid;
+    justify-content: center;
+    color: white;
+}
+#form > * {
+    width: 30vw;
+
+}
+#btn{
+    border-radius: 10px;
+    background-color: orange;
+    width: 100px;
+    color: white;
+    /*border: none;*/
+}
