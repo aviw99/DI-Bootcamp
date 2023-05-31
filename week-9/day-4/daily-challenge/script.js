@@ -1,11 +1,10 @@
 const api_key = "e985dd5567775ac4dd171082";
 const codesUrl = `https://v6.exchangerate-api.com/v6/${api_key}/codes`;
 const container = document.getElementById('container');
-const result = document.createElement('h1');
-container.appendChild(result);
+const result = document.getElementById('result');
+// container.appendChild(result);
 result.style.color = 'white';
 result.style.fontSize = '50px';
-
 const form = document.getElementById('form');
 form.addEventListener('submit', (event) => handleSubmit(event))
 

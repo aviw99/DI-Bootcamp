@@ -20,12 +20,23 @@ body{
 }
 #form > * {
     width: 30vw;
-
 }
 #btn{
     border-radius: 10px;
     background-color: orange;
     width: 100px;
     color: white;
-    /*border: none;*/
+}
+@media screen and (max-width: 400px) {
+    #form > *{
+        width: 70vw;
+    }
+    #container{
+        width: 90vw;
+        height: 75vh;
+        border-radius: 5%;
+        text-align: center;
+        display: block;
+        border: black solid 1px;
+    }
 }
