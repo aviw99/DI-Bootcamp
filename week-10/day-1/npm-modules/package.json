@@ -1,0 +1,16 @@
+{
+  "name": "npm-modules",
+  "version": "1.1.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "avi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "slugify": "^1.6.6"
+  }
+}
