@@ -1,13 +1,122 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Israeli Soccer Team Wins and Losses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .graph-container {
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .graph {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+
+        .bar {
+            width: 20px;
+            background-color: #008080;
+            position: absolute;
+            bottom: 0;
+            transition: height 0.5s ease;
+        }
+
+        .year-label {
+            position: absolute;
+            bottom: -20px;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-<script src="script.js"></script>
+<h1>Israeli Soccer Team Wins and Losses</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th>Wins</th>
+        <th>Losses</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>2015</td>
+        <td>12</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>2016</td>
+        <td>14</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>2017</td>
+        <td>10</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>2018</td>
+        <td>16</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>2019</td>
+        <td>11</td>
+        <td>7</td>
+    </tr>
+    </tbody>
+</table>
+<div class="graph-container">
+    <div class="graph">
+        <div class="bar" style="height: 60%;"></div>
+        <div class="year-label">2015</div>
+    </div>
+    <div class="graph">
+        <div class="bar" style="height: 70%;"></div>
+        <div class="year-label">2016</div>
+    </div>
+    <div class="graph">
+        <div class="bar" style="height: 50%;"></div>
+        <div class="year-label">2017</div>
+    </div>
+    <div class="graph">
+        <div class="bar" style="height: 80%;"></div>
+        <div class="year-label">2018</div>
+    </div>
+    <div class="graph">
+        <div class="bar" style="height: 55%;"></div>
+        <div class="year-label">2019</div>
+    </div>
+</div>
 </body>
 </html>
