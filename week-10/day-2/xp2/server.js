@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-// app.use(express.static('public'));
+
+app.use(express.static('public'));
 app.use(cors());
 
 const arr = [
@@ -10,7 +11,7 @@ const arr = [
     {id:3 , name:"bob"}
 ];
 
-app.get('/', (req, res) => {
+app.get('/users', (req, res) => {
     const user = {
         firstname: 'John',
         lastname: 'Doe'
@@ -27,3 +28,8 @@ app.get('/:id', (req, res)=>{
 app.listen(3000, () => {
     console.log('listening on port 3000')
 });
+
+app.get('/', (req,res)=>{
+    res.sendFile(__dirname + '/public/index.html')
+})
+
