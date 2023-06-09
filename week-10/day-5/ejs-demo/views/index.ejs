@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index.ejs</title>
+</head>
+<body>
+    <%- include('partials/headers')%>
+    <h1>EJS is a template engine</h1>
+    <h1 style="color: purple;">
+        Hi <%= user.firstName %> <%= user.lastName %>
+        <% if(locals.login){ %>
+            <h2>Welcome</h2>
+        <% }else{ %>
+            <h2>Please login</h2>
+        <% } %>
+
+        <% for(const key in students){ %>
+            <h2><%= key  %>: <%= students[key]  %></h2> <br>
+        <% } %>
+
+        <%
+        let html = '';
+        for(const item in students){
+            html += '<h1>' + students[item] + '</h1>'
+        }
+
+        %>
+        <%- html %>
+
+    </h1>
+    <%- include('partials/footer')%>
+</body>
+</html>

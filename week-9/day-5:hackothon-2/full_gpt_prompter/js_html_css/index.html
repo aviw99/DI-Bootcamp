@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <a style="color: #9a7300" href="https://www.linkedin.com/in/avi-w-b29905233/" target="_blank">LinkedIn</a>
+            <a style="color: #9a7300" href="https://github.com/aviw99" target="_blank">GitHub</a>
+        </div>
+        <br><br>
+                <div id="wrap">
+                    <div id="input_form">
+                        <p class="title"><strong>INPUT_FIELDS</strong></p>
+                        <form onsubmit="formOneSubmit(event)" name="inputForm" id="inputForm">
+                            <textarea rows="3" cols="65" placeholder="ACTOR - the role the AI should play&#10;&#10;Example: Personal Shopper" name="actor_input" required></textarea>
+                            <br>
+                            <textarea rows="5" cols="65" placeholder="TASK - task to perform on a given user input. Include: {user_input}&#10;&#10;Example: Given the following user input, suggest some ideas for an outfit. User input: {user_input}" name="task_input" required></textarea>
+                            <br>
+                            <textarea rows="8" cols="65" placeholder="FORMAT - the format the response should take, it's recommended to include examples. Also include an example of what the {user_input} variable might look like
+
+Example: JSON data, here's an example of an appropriate response given &quot;130lb male, something good for a hike&quot; as the user input for the given examples in the previous sections:
+    {
+      &quot;outfit_suggestions&quot;: {
+        &quot;outfit&quot;: {
+          &quot;gender&quot;: &quot;male&quot;,
+          &quot;weight&quot;: &quot;130lb&quot;,
+          &quot;occasion&quot;: &quot;hiking&quot;,
+          &quot;suggestions&quot;: [
+            &quot;Trekking shoes&quot;,
+            &quot;Moisture-wicking t-shirt&quot;,
+            &quot;Convertible hiking pants&quot;,
+            &quot;Lightweight jacket&quot;,
+            &quot;Hiking backpack&quot;,
+            &quot;Sunglasses&quot;
+          ]
+        }
+      }
+    }" name="format_input" required></textarea>
+                            <br>
+                            <input type="submit" id="submit_btn" value="Generate">
+                        </form>
+                    </div>
+                    <div id="output_prompt">
+                        <p class="title"><strong>OUTPUT_PROMPT</strong></p>
+                        <textarea rows="17" cols="65" placeholder="The generated prompt will be displayed here. " id="output-prompt"></textarea>
+                    </div>
+                    <div id="placeholder_div"></div>
+
+                </div>
+                <br><br>
+
+        <div id="footer">
+            <p style="color: #9a7300"><small>© 2023 Avi Weiss. All Rights Reserved.</small></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

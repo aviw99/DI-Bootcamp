@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <form style="border: black solid 1px; padding: 20px; margin: 20px;" id="loginForm" onsubmit="loginSubmit(event)">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username" name="username" required><br><br>
+            <input type="password" placeholder="Password" name="password"required><br><br>
+            <input type="submit" value="Login">
+        </form>
+        <form style="border: black solid 1px; padding: 20px; margin: 20px;" id="registerForm" onsubmit="registerSubmit(event)">
+            <h1>Register</h1>
+            <input type="text" placeholder="First Name" name="first_name" required><br><br>
+            <input type="text" placeholder="Last Name" name="last_name" required><br><br>
+            <input type="email" placeholder="Email" name="email" required><br><br>
+            <input type="text" placeholder="Username" name="username" required><br><br>
+            <input type="password" placeholder="Password" name="password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+        <div id="successMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
