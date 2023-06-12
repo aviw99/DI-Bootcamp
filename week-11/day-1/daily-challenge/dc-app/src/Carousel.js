@@ -22,8 +22,6 @@ const MyCarousel = () => {
             </div>
         </Carousel>
     )
-        
-    
 }
 
 export default MyCarousel
