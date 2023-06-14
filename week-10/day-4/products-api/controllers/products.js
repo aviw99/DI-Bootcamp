@@ -56,7 +56,8 @@ const _getProductName = (req,res) => {
 const _insertProduct = (req,res) => {
     insertProduct(req.body)
         .then(data => {
-            res.json(data)
+            // res.json(data)
+            _getAllProducts(req, res)
         }).catch(err => {
         console.log(err)
         res.status(404).json({msg: err.message})
