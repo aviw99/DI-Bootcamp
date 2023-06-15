@@ -70,11 +70,11 @@ class AppForm extends React.Component{
                         <input type='radio' value='Other' name='gender'/>Other 
                     </div><br/>
 
-                    <select name='destination' onChange={this.handleChange}>
-                        <option value='' disabled selected hidden>--Please choose a destination--</option>
-                        <option value='Thailand'>Thailand</option>
-                        <option value='Japan'>Japan</option>
-                        <option value='Brazil'>Brazil</option>
+                    <select name='destination' defaultValue='' onChange={this.handleChange}>
+                        <option value=''  disabled hidden>--Please choose a destination--</option>
+                        <option value='Thailand'  >Thailand</option>
+                        <option value='Japan'  >Japan</option>
+                        <option value='Brazil'  >Brazil</option>
                     </select> 
                     <br/><br/>
 
