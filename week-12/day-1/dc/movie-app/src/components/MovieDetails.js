@@ -1,7 +1,7 @@
 import {useSelector} from "react-redux";
 
 const MovieDetails = (props) => {
-    const details = useSelector(state => state.movie_details);
+    const details = useSelector(state => state.reducer_detail.movie_details);
 
     return(
         <div style={{display:'inline-block', width:'50%'}}>

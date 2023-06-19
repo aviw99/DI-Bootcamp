@@ -3,7 +3,7 @@ import {showDetail} from "../redux/actions";
 
 
 const MovieList = (props) => {
-    const list = useSelector(state => state.movies_list)
+    const list = useSelector(state => state.reducer_list.movies_list)
     const dispatch = useDispatch()
 ;    return(
         <div style={{display:'inline-block', width:'50%'}}>

@@ -12,13 +12,18 @@ const initState = {
 
 }
 
-export const reducer = (state = initState, action = {}) => {
+export const reducer_list = (state = initState, action = {}) => {
+    return{...state}
+}
+
+
+
+
+export const reducer_detail = (state = initState, action = {}) => {
     switch(action.type) {
         case DETAIL:
-
             return{...state, movie_details: action.payload}
         default:
             return{...state}
     }
-
 }
